@@ -36,6 +36,11 @@ aside a:hover {
     color: red;
 }
 
+aside a:active {
+    background: orange;
+    color: white;
+}
+
 /* === FŐ RÉSZ eleje === */
 
 section {
@@ -98,4 +103,8 @@ article, div {
 
 h3 {
     font-style: italic;
+}
+
+h2, h3, p {
+    text-align: justify;
 }
