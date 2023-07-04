@@ -5,6 +5,8 @@ body {
     background-size: cover;
 }
 
+/* === HEADER eleje === */
+
 header {
     height: 10rem;
     margin: 0;
@@ -12,6 +14,8 @@ header {
     padding-left: 50px;
     background-size: cover;
 }
+
+/* === ASIDE eleje === */
 
 aside {
     width: 20%;
@@ -32,6 +36,8 @@ aside a:hover {
     color: red;
 }
 
+/* === FŐ RÉSZ eleje === */
+
 section {
     float: right;
     width: 78%;
@@ -40,22 +46,40 @@ section {
     background-color: rgba(255, 0, 0, 0.8);
 }
 
+/* === ALNAVIGÁCIÓ eleje === */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    width:20%;
+}
+  
+li a {
+    display: block;
+    color: yellow;
+    text-align: center;
+    padding: 15px 0;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+
+li a:active {
+    background-color: grey;
+    color: white;
+}
+
+/* === BLOKKOK eleje === */
+
 article {
     margin: 0;
-}
-
-article p {
-    float: left;
-    width: 65%;
-    text-align: justify;
-}
-
-article img {
-    float: right;
-    width: 30%;
-    transition: transform .2s;
-}
-
-article img:hover {
-    transform: scale(1.2);
 }
