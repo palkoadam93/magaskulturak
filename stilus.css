@@ -78,6 +78,10 @@ li a:active {
     color: white;
 }
 
+.muv li {
+    width: 25%;
+}
+
 /* === BLOKKOK eleje === */
 
 article, div {
