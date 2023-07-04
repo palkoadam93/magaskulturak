@@ -95,3 +95,7 @@ article, div {
 .van {
     display: block;
 }
+
+h3 {
+    font-style: italic;
+}
