@@ -29,41 +29,51 @@
         <a href="Kina.html">Kína</a>
         <a href="Antik.html">Antikvitás</a>
         <a href="Vallasok.html">Antik vallás</a>
+        <a href="muv-antik.html">Antik művészet</a>
         <a href="Magia.html">Mágia</a>
         <a href="Judaizmus.html">Judaizmus</a>
         <a href="Keresztenyseg.html">Kereszténység</a>
-        <a href="Iszlam.html">Iszlam</a>
+        <a href="Iszlam.html">Iszlám</a>
         <a href="pusztaiak.html">Pusztai népek</a>
         <a href="Nyugat.html">Nyugat</a>
+        <a href="muv-nyugat.html">Nyugati művészet</a>
         <a href="Magyaro.html">Magyarország</a>
         <a href="Orosz.html">Oroszország</a>
         <a href="Mexiko.html">Mexikó</a>
     </aside>
 
     <ul>
-        <li><a href="#eloidok">Előidők</a></li>
-        <li><a href="#koraido">Koraidő</a></li>
-        <li><a href="#keseikor">Kései kor</a></li>
-        <li><a href="#civi">Civilizáció</a></li>
-        <li><a href="#cezar">Császárság</a></li>
+        <li><a href="javascript:toggleDiv('div1');">Előidők</a></li>
+        <li><a href="javascript:toggleDiv('div2');">Koraidő</a></li>
+        <li><a href="javascript:toggleDiv('div3');">Kései kor</a></li>
+        <li><a href="javascript:toggleDiv('div4');">Civilizáció</a></li>
+        <li><a href="javascript:toggleDiv('div5');">Császárság</a></li>
     </ul>
 
     <section>
-        <article id="eloidok">
+        <div class="nincs" id="div1">
             <h1>Előidők</h1>
-        </article>
-        <article id="koraido">
+        </div>
+        <div class="nincs" id="div2">
             <h1>Koraidő</h1>
-        </article>
-        <article id="keseikor">
+        </div>
+        <div class="nincs" id="div3">
             <h1>Kései kor</h1>
-        </article>
-        <article id="civil">
+        </div>
+        <div class="nincs" id="div4">
             <h1>Civilizáció</h1>
-        </article>
-        <article id="cezar">
+        </div>
+        <div class="nincs" id="div5">
             <h1>Császárság</h1>
-        </article>
+        </div>
     </section>
+
+    <script>
+        function toggleDiv(divId) {
+            $(".van").addClass('nincs').removeClass('van');
+            $("#"+divId).addClass('van').removeClass('nincs');
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
 </body>
 </html>

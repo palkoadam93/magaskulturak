@@ -80,6 +80,14 @@ li a:active {
 
 /* === BLOKKOK eleje === */
 
-article {
+article, div {
     margin: 0;
+}
+
+.nincs {
+    display: none;
+}
+
+.van {
+    display: block;
 }
