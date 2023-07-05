@@ -39,20 +39,44 @@
         <a href="muv-nyugati.html">Nyugati művészet</a>
         <a href="szell-nyugati.html">Nyugati szellemi</a>
         <a href="Magyaro.html">Magyarország</a>
+        <a href="muv-magyar.html">Magyar művészet</a>
         <a href="Orosz.html" style="color:white; background:grey;">Oroszország</a>
+        <a href="muv-orosz.html">Orosz művészet</a>
         <a href="Mexiko.html">Mexikó</a>
     </aside>
 
     <ul>
-        <li><a class="active" href="#eloidok">Előidők</a></li>
-        <li><a href="#koraido">Koraidő</a></li>
-        <li><a href="#keseikor">Kései kor</a></li>
-        <li><a href="#civi">Civilizáció</a></li>
-        <li><a href="#cezar">Császárság</a></li>
+        <li><a href="javascript:toggleDiv('div1');">Kijevi Rusz</a></li>
+        <li><a href="javascript:toggleDiv('div2');">Moszkva</a></li>
+        <li><a href="javascript:toggleDiv('div3');">Oroszország</a></li>
+        <li><a href="javascript:toggleDiv('div4');">Szovjetunió</a></li>
+        <li><a href="javascript:toggleDiv('div5');">Oroszország</a></li>
     </ul>
 
     <section>
-
+        <div class="nincs" id="div1">
+            <h1>Kijevi Rusz</h1>
+        </div>
+        <div class="nincs" id="div2">
+            <h1>Moszkva</h1>
+        </div>
+        <div class="nincs" id="div3">
+            <h1>Oroszország</h1>
+        </div>
+        <div class="nincs" id="div4">
+            <h1>Szovjetunió</h1>
+        </div>
+        <div class="nincs" id="div5">
+            <h1>Oroszország</h1>
+        </div>
     </section>
+
+    <script>
+        function toggleDiv(divId) {
+            $(".van").addClass('nincs').removeClass('van');
+            $("#"+divId).addClass('van').removeClass('nincs');
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
 </body>
 </html>
